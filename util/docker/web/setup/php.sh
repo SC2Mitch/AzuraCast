@@ -20,6 +20,7 @@ cp /bd_build/php/www.conf.tmpl /etc/php/7.4/fpm/www.conf.tmpl
 
 # Install Composer
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
+composer self-update --1
 
 # Enable composer parallel downloads.
 composer global require hirak/prestissimo
